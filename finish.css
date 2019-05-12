@@ -1,0 +1,1600 @@
+
+
+
+#wrappar {
+   width:100%;
+   height:100vh;
+   font-family: "Noto Sans JP";
+   z-index:0;
+}
+
+/*メニューバー*/
+#top-menu {
+   width:100%;
+}
+
+#top-menu ul {
+   width:100%;
+   max-height:80px;
+  position:absolute;
+  z-index:4;
+  position:fixed;
+}
+
+#top-menu li {
+   width:calc(100%/7);
+   float:left;
+   text-align:center;
+   padding:30px 20px; 
+   color:#FFF;
+}
+
+
+
+/*メニューバーのホバー*/
+#top-menu .Transparent {
+   transition:1.0s;
+   text-shadow: 0.5px 0.5px 0 #808080,
+               -0.5px 0.5px 0 #808080,
+               0.5px -0.5px 0 #808080,
+               -0.5px -0.5px 0 #808080;
+
+}
+#top-menu .Transparent:hover {
+   opacity:0.7;
+   background-color:#fff;
+}
+
+.Transparent img{
+  width:80%;
+ 
+}
+
+
+#top-menu .Transparent-blue {
+   opacity:0.6;
+   background-color:blue;
+   transition:1.0s;
+}
+
+
+#top-menu .Transparent-blue:hover {
+   opacity:1.0;
+
+}
+
+
+#top-menu .Transparent-red {
+   opacity:0.6;
+   background-color:red;
+   transition:1.0s;
+
+
+}
+
+
+#top-menu .Transparent-red:hover {
+   opacity:1.0;
+
+
+}
+
+
+/*右下メールサポート*/
+#menu-right {
+  width:100%;
+}
+
+#menu-right p {
+  width:15%;
+  color:#FFF;
+  position:absolute;
+  z-index:6;
+  bottom:0px;
+  right:0px;
+  background-color:blue;
+  opacity:0.6;
+  transition:1.0s;
+  padding:20px 46px;
+  font-size:17px;
+  line-height:20px;
+  position:fixed;
+}
+
+#menu-right p:hover {
+  opacity:1.0;
+
+}
+
+
+/*m-hero始めます*/
+
+#m-hero {
+　width:100%;
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+
+.m_imgBox {
+    height:100vh;
+    overflow: hidden;
+    position: relative;
+   z-index:0;
+ }
+
+.main_img {
+    z-index:10;
+    opacity: 0;
+    width: 100%;
+    height:100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-animation: anime 36s 0s infinite;
+    animation: anime 36s 0s infinite; 
+
+}
+    .main_img:nth-of-type(2) {
+      -webkit-animation-delay: 6s;
+      animation-delay: 6s; }
+
+    .main_img:nth-of-type(3) {
+      -webkit-animation-delay: 12s;
+      animation-delay: 12s; }
+
+    .main_img:nth-of-type(4) {
+      -webkit-animation-delay: 18s;
+      animation-delay: 18s; }
+
+    .main_img:nth-of-type(5) {
+      -webkit-animation-delay: 24s;
+      animation-delay: 24s; }
+
+    .main_img:nth-of-type(6) {
+      -webkit-animation-delay: 30s;
+      animation-delay: 30s; }
+
+@keyframes anime {
+  0% {
+        opacity: 0;
+    }
+    8% {
+        opacity: 1;
+    }
+    17% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0;
+        transform: scale(1.2) ;
+         z-index:9;
+    }
+    100% { opacity: 0 }
+}
+
+
+/* Wrapper Is not Needed| Just for demo purpose.  */
+
+
+#m-button {
+}
+
+
+.btn, .btn2, .btn3, .btn4, .btn5, .btn6, .btn7, .btn10{
+  padding: 15px 100px;
+  margin:10px 4px;
+  color: rgba(0,0,255,0.5);  
+  font-family: sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  text-decoration: none;
+  display:inline-block;
+  
+}
+.transition{
+    position: absolute;
+    top: -10%;
+    left: 0%;
+    width: 100%;
+    height: 0%;
+    background: #000;
+    z-index:-1;
+/*     -ms-transform: skewX(-50deg); 
+    -webkit-transform: skewX(-50deg); 
+    transform: skewX(-50deg); */
+}
+/* Btn 10  */
+.btn10{
+    top: 40px;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    text-transform: uppercase!important;
+    letter-spacing: 2px;
+    color: rgba(255,255,255,0.5);  
+    cursor: hand;
+    text-align: center;
+    text-transform: capitalize;
+    border: 2px solid rgba(255,255,255,0.5);  
+    border-radius:50px;
+    position: relative;
+    overflow: hidden!important;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    background: transparent!important;
+    z-index:10;
+    
+}
+
+
+.btn10:hover{
+    border: 1px solid #071982;
+	  color: #80ffd3!important;
+    font-size:28px;	  
+}
+.btn10::before {
+    content: '';
+    width: 0%;
+    height: 100%;
+    display: block;
+    background: #071982;
+    position: absolute;
+	  -ms-transform: skewX(-20deg);
+    -webkit-transform: skewX(-20deg); 
+    transform: skewX(-20deg);   
+    left: -10%;
+    opacity: 1;
+    top: 0;
+    z-index: -12;
+    -moz-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+  -o-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+  -webkit-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+  transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+	   box-shadow:2px 0px 14px rgba(0,0,0,.6);
+  } 
+
+.btn10::after {
+    content: '';
+    width: 0%;
+    height: 100%;
+    display: block;
+    background: #80ffd3;
+    position: absolute;
+	-ms-transform: skewX(-20deg);
+    -webkit-transform: skewX(-20deg); 
+    transform: skewX(-20deg);   
+    left: -10%;
+    opacity: 0;
+    top: 0;
+    z-index: -15;
+    -webkit-transition: all .94s cubic-bezier(.2,.95,.57,.99);
+    -moz-transition: all .4s cubic-bezier(.2,.95,.57,.99);
+    -o-transition: all .4s cubic-bezier(.2,.95,.57,.99);
+    transition: all .4s cubic-bezier(.2,.95,.57,.99);
+    box-shadow: 2px 0px 14px rgba(0,0,0,.6);
+}
+.btn10:hover::before, .btn1O:hover::before{
+	opacity:1;
+	width: 116%;
+}
+.btn10:hover::after, .btn1O:hover::after{
+	opacity:1;
+	width: 120%;
+}
+
+
+#m-top-text {
+  width:80%;
+  margin:10%;
+  text-align:center;
+  position:fixed;
+  position:absolute;
+  z-index:6;
+  bottom:40px;
+}
+
+#m-top-text img {
+  width:50%;
+}
+
+.m1png {
+  padding:2% 6%;
+}
+
+
+
+/*aori.css 始めます*/
+
+
+
+
+/*背景固定スクロール*/
+#h-back {
+    width: 100%;
+    min-height: 1500px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-image: url(img/h-0.jpg);
+    position:relative;
+    z-index:0;
+}
+
+
+#h-black {
+   width:70%;
+   
+   background-color:rgba(0, 0, 0, 0.6);
+   position:absolute;
+   z-index:2; 
+   left:15%;
+   top:10px;
+}
+
+
+#h-black h2 {
+   font-size:40px;
+   color:#FFF;
+   margin-top:80px;
+   margin-left:10%;
+}
+
+
+#h-content {
+   width:80%;
+   margin-left:10%;
+   margin-top:300px;
+
+}
+
+
+
+.h-img {
+   width:100%;
+   
+}
+
+#h-black img {
+   width:100%;
+   margin-top:30px; 
+   padding-bottom:30px;
+}
+
+
+
+
+/*aori.css  終わります*/
+
+
+
+/*  rokkaku.css  始めます */
+
+
+
+
+
+/*効果*/
+
+#effect {
+  width:100%;
+}
+
+
+
+#effect .effect-top {
+   width:70%;
+   margin-left:15%;
+   padding-top:60px;
+}
+
+#effect .effect-top h3 {
+   width:11%;
+   border-bottom:5px solid;
+   margin-left:44%;
+   margin-bottom:50px;
+}
+
+
+#effect .effect-top h2 {
+   font-size:45px;
+   text-align:center;
+}
+
+
+
+
+
+#effect #content-3 {
+   width:70%;
+   margin-left:15%;
+   margin-top:100px;
+   clear:both;
+} 
+
+
+#effect #content-3 .health {
+   width:30%;
+   float:left; 
+   margin-left:3%;
+}
+
+#effect #content-3 .health img {
+   width:100%;
+   height:350px;
+
+}
+
+#effect #content-3 .health h5 {
+   font-size:25px;
+   margin-top:30px;
+   margin-left:10%;
+
+}
+
+#effect #content-3 .health p {
+   width:90%;
+   font-size:18px;
+   font-weight: bold;
+   margin-top:40px;
+   line-height:30px;
+   color:#414141;
+}
+
+
+#effect #content-3 .health .i-xyz {
+   font-size:25px;
+   color:gold;
+   margin-top:30px;
+   margin-left:27%;
+
+}
+
+
+
+
+#effect #content-2 {
+   width:70%;
+   margin-left:15%;
+   padding-top:50px;
+   clear:both;
+} 
+
+
+#effect #content-2 .health {
+   width:30%;
+   float:left; 
+}
+
+#effect #content-2 .health img {
+   width:100%;
+   height:350px;
+
+}
+
+#effect #content-2 .i-ggo {
+   margin-left:18%;
+}
+
+
+#effect #content-2 .i-kko {
+   margin-left:4%;
+
+}
+
+#effect #content-2 .health h5 {
+   width:90%;
+   font-size:25px;
+   margin-top:30px;
+   margin-left:2%;
+
+}
+
+#effect #content-2 .health p {
+   width:90%;
+   font-size:18px;
+   font-weight: bold;
+   margin-top:40px;
+   line-height:30px;
+   color:#414141;
+}
+
+
+
+#effect #content-2 .health .i-llp {
+   width:90%;
+   font-size:18px;
+   font-weight: bold;
+   margin-top:65px;
+   line-height:30px;
+   color:#414141;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*  rokkaku.css  終わります  */
+
+
+
+
+
+/*youtube .css 始めます*/
+
+
+/*背景固定スクロール*/
+#youtube {
+  width: 80%;
+  margin:auto;
+  padding-top:70px;
+ 
+}
+
+#y-top {
+  width:100%;
+}
+
+#youtube h5 {
+  border-top:6px solid #fadbe0;
+  width:13%;
+  margin:auto;
+  text-align:center;
+}
+
+#youtube h2 {
+  width:80%;
+  margin:auto;
+  font-size:50px;
+  text-align:center;
+  padding-top:50px;
+
+}
+
+
+
+#yt-box {
+  width:100%;
+  margin-top:30px;
+
+}
+
+
+#box-image {
+  width:100%;
+}
+
+
+#box-image img {
+  width:100%;
+ 
+}
+
+
+/*youtube動画の　場所をここで決める */
+#douga {
+  width:727;
+  height:405;
+  margin:auto;
+  position:absolute;
+  z-index:3;
+  top:496.5%;
+  left:25%;
+  
+}
+
+
+#my-box {
+   width:70%;
+   margin-left:15%;
+   border:2px solid #808080;
+   background-color:#FFF;
+   box-shadow: 4px 4px 10px;
+
+   margin-bottom:20px;
+}
+
+.my-tx {
+   width:50%;
+   text-align:center;
+   border:1px solid #fff;
+   margin-bottom:2%;
+}
+
+.y-1 {
+  float:left;
+}
+
+.y-2 {
+  float:right;
+}
+
+.m-watch {
+  margin-top:20px;
+  width:80%;
+  margin-left:10%;
+  background-color:rgba(234,173,189,0.8);
+  border-radius:15px;
+}
+
+.m-watch p {
+  font-size:20x;
+  padding:2% 0%;
+}
+
+.m-box {
+  margin-top:20px;
+  width:80%;
+  margin-left:10%;
+}
+
+.m-box img {
+  width:100%;
+}
+
+.m-box h3 {
+  background-color:rgba(250,219,224,0.8);
+  margin-top:10px;
+  padding-top:10px;
+  padding-bottom:3px;
+  border-bottom:1px dotted #808080;
+}
+
+
+#douga-2 {
+  width:727;
+  height:405;
+  margin:auto;
+  position:absolute;
+  z-index:3;
+  top:696%;
+  left:25%;
+  
+}
+
+
+
+
+/* youtube.css  終わります*/
+
+
+
+/* tokuten css 始めます  */
+
+
+
+/*背景固定スクロール*/
+#h-sppo {
+    width: 100%;
+    min-height: 200px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-image: url(img/h-0.jpg);
+}
+
+
+#h-sppo h2 {
+    font-size:80px;
+    text-align:center;
+    padding-top:50px;
+
+}
+
+
+/*特典動画*/
+#h-ppo {
+   width:100%;
+   padding-bottom:200px;
+
+}
+
+#h-ppo #h-toku {
+   width:70%;
+   margin-left:15%;
+   margin-top:100px;
+
+}
+
+
+#h-ppo #h-toku img {
+   width:100%;
+   box-shadow: 6px 6px 10px #808080;
+
+}
+
+
+
+
+
+/* tokuten css 終わります  */
+
+
+
+
+
+/* mousikomi .css はじめます  */
+
+
+
+
+/*背景固定スクロール*/
+
+#h-top {
+    width: 100%;
+    min-height: 200px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-image: url(img/h-0.jpg);
+}
+
+
+#h-top h2 {
+    font-size:80px;
+    text-align:center;
+    padding-top:50px;
+
+}
+
+
+/*背景*/
+
+#h-primary {
+    width:100%;
+    height:2300px;
+    position:relative;
+    z-index:0;
+
+
+
+}
+
+/*白の背景*/
+#h-white {
+   width:70%;
+   height:950px;
+   background-image:url(img/sea-1284467_1280.jpg);  
+   border:2px solid #808080;
+   background-color:#FFF;
+   box-shadow: 4px 4px 10px #808080;
+   position:absolute;
+   z-index:2; 
+   left:15%;
+   top:100px;
+}
+
+#h-w2 {
+   width:70%;
+   height:950px;
+   background-image:url(img/maui-2729958_1920.jpg);  
+   border:2px solid #808080;
+   background-color:#FFF;
+   box-shadow: 4px 4px 10px #808080;
+   position:absolute;
+   z-index:2; 
+   left:15%;
+   top:1200px;
+
+
+}
+
+
+
+
+/*黒の背景*/
+.h-bl {
+   width:70%;
+   height:800px;
+   background-color:rgba(225,225,225,0.6);
+   position:absolute;
+   z-index:2; 
+   left:15%;
+   top:60px;
+
+}
+
+.h-above {
+   width:80%;
+   margin-top:50px;
+   margin-left:10%;
+
+
+}
+
+
+.h-te {
+   width:100%;
+   font-size:40px;
+   padding-top:20px;
+   padding-bottom:20px;
+   text-align:center;
+   border-radius:15px;
+   margin-bottom:30px;
+   box-shadow: 4px 4px  #000;
+   background-image:-moz-linear-gradient(
+    top,
+    #49a9d4 0%,
+    #2989d8 40%,
+    #2285d6 52%,
+    #2989d8);
+ 
+    background-image:-webkit-gradient(
+    linear,left top,left bottom,
+    from(#DD0000),
+    color-stop(0.49,#CC0000),
+    color-stop(0.52,#CC0000),
+    to(#AA0000));
+}
+
+
+
+.h-te:hover {
+   box-shadow:none;
+   background-image:-moz-linear-gradient(
+    top,
+    #49a9d4 0%,
+    #2989d8 40%,
+    #2285d6 52%,
+    #2989d8);
+ 
+    background-image:-webkit-gradient(
+    linear,left top,left bottom,
+    from(#00BB00),
+    color-stop(0.3,#009900),
+    color-stop(0.5,#009900),
+    to(#00BB00));
+
+
+}
+
+.h-above h2 {
+   font-size:70px;
+   border:3px solid #000;
+   background-color:#FFF;
+   padding-top:20px;
+   padding-bottom:20px;
+   text-align:center;
+}
+
+
+
+.h-bb {
+   top:100px;
+}
+
+
+.h-bl .h-kuma {
+   width:80%;
+   margin-left:10%;
+   font-size:20px;
+   margin-top:60px;
+
+}
+
+.h-bl .h-kuma .h-neko {
+   margin-top:50px;
+   margin-left:30%;
+}
+
+.h-bl .h-panda  {
+   width:80%;
+   margin-left:10%;
+   border:3px solid #000;
+   background-color:#FFF;
+   margin-top:50px;
+}
+
+
+.h-bl .h-panda h5  {
+   font-size:35px;
+   padding:10px 20px;
+   margin-left:25%;
+   
+
+}
+
+
+
+.h-bl .h-panda p  {
+  font-size:20px;
+  padding:20px 10px;
+
+
+}
+
+
+
+
+/* mousikomi .css 終わります  */
+
+
+
+
+
+/*  koe  .css  始めます  */
+
+
+
+
+
+/*背景固定スクロール*/
+#h-erpp {
+    width: 100%;
+    min-height: 200px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-image: url(img/AdobeStock_109094670.jpeg);
+    text-align:center;
+}
+
+
+#h-erpp h2 {
+    font-size:80px;
+    padding-top:50px;
+
+}
+
+/*使用してみた方々*/
+#h-konto {
+  width:100%;
+  padding-bottom: 36px;
+}
+
+#h-shiro {
+  width:70%;
+  padding-bottom:30px;
+  margin-left:15%;
+  margin-top:50px;
+  border:2px solid #808080;
+  background-color:#FFF;
+  box-shadow: 4px 4px 10px #808080;
+
+}
+
+
+#h-konto #h-shiro .h-gorai {
+  width:90%;
+  margin-left:5%;
+
+
+}
+
+
+#h-konto #h-shiro .h-gorai h5 {
+  font-size:30px;
+  padding:30px 0;
+}
+
+
+
+#h-konto #h-shiro .h-gorai .imai {
+  width:40%;
+  height:200px;
+  float:left;
+  margin-top:47px; 
+
+
+}
+
+#h-konto #h-shiro .h-gorai .imai img {
+  width:100%;
+
+}
+
+
+#h-konto #h-shiro .h-gorai .h-teck {
+  width:50%;
+  margin-left:5%;
+  float:left;
+
+
+}
+
+
+#h-konto #h-shiro .h-gorai .h-doi {
+   margin-left:0;
+   margin-right:5%;
+
+
+}
+
+#h-konto #h-shiro .h-gorai .h-teck .h-z {
+  font-size:20px;
+  font-weight: bold;
+
+
+
+}
+
+
+#h-konto #h-shiro .h-gorai .h-teck .h-a {
+  margin-top:20px;
+  line-height:25px;
+
+}
+
+
+
+/*  koe  .css  終わります  */
+
+
+
+
+/*  text  .css  始めます　*/
+
+
+
+/*背景固定スクロール*/
+#h-poto {
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-image:url(img/AdobeStock_87976608.jpeg);
+}
+
+
+#h-poto h2 {
+    font-size:60px;
+    text-align:center;
+    padding-top:50px;
+    line-height:90px;    
+}
+
+
+#h-poto .h-cxc {
+    margin-left:20%;
+
+
+
+}
+
+/*注意書き*/
+#h-point {
+   width:100%;
+   background-size: cover;
+   background-position:center center; 
+   z-index:0;
+   padding-bottom: 30px;
+}
+
+/*白の背景*/
+#h-footer {
+   width:70%;
+   margin-left:15%;
+   border:2px solid #808080;
+   background-color:#FFF;
+   box-shadow: 4px 4px 10px #808080;
+   z-index:1; 
+   top:100px;
+}
+
+
+#h-footer #h-zooi {
+   width:80%;
+   margin-left:10%;
+   margin-top:30px;
+   line-height:50px;
+}
+
+
+#h-footer #h-zooi span {
+   color:red;
+
+}
+
+#h-footer #h-zooi .iro {
+   background-color:#FFFF66;
+
+}
+
+
+#h-footer #h-zooi p {
+   margin-top:40px;
+   line-height:30px;
+
+}
+
+
+/*  text  .css  終わります  */
+
+
+/* iphone  .css  始めます  */
+
+
+
+
+
+
+/*背景固定スクロール*/
+#h-bwrd {
+    width: 100%;
+}
+
+
+#h-bwrd .h-vty {
+    width:60%;
+    margin-left:20%;
+    text-align:center;
+
+
+}
+
+#h-bwrd h2 {
+    font-size:80px;
+    padding-top:50px;
+
+}
+
+
+
+
+#buii {
+   width:100%;
+
+
+}
+
+
+#buii #obaba {
+  width:70%;
+  margin-left:15%;
+  margin-bottom:40px; 
+  margin-top:80px;
+}
+
+
+#buii #obaba .fyuu {
+   width:90%;
+   margin-left:5%;
+   padding-top:150px;
+   clear:both;
+}
+
+#buii #obaba .fyuu .h-lee {
+   width:34%;
+   float:left;
+}
+
+
+#buii #obaba .fyuu .h-lee img {
+  width:100%;
+
+
+}
+
+
+
+#buii #obaba .fyuu p {
+  width:60%;
+  font-size:25px;
+  text-align:center;
+  background-color:#000080;
+  color:#FFF;
+  padding:10px 20px;
+  border-radius:15px;
+}
+
+
+
+#buii #obaba .fyuu h5 {
+  font-size:30px;
+  color:red;
+  margin-top:20px; 
+  margin-bottom:60px;
+  line-height:40px;
+}
+
+
+#buii #obaba .fyuu h6 {
+  font-size:25px;
+  color:#000080;
+  margin-bottom:20px;
+
+}
+
+#buii #obaba .h-rig {
+   width:60%;
+   float:left;
+   margin-left:6%;
+}
+
+#buii #obaba .h-rig img {
+   width:100%;
+
+}
+
+
+#buii #obaba .h-loolo {
+   margin-left:0;    
+   margin-right:6%;
+}
+
+
+
+
+/*  iphone  .css  終わります  */
+
+
+
+
+
+
+/* mousichuu .css  はじめます */
+
+
+/*背景固定スクロール*/
+#h-main {
+    width: 100%;
+    min-height: 200px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-image: url(img/h-0.jpg);
+}
+
+
+#h-main h2 {
+    font-size:80px;
+    text-align:center;
+    padding-top:50px;
+
+}
+
+
+
+/*注意書き*/
+#h-xxi {
+    width:100%;
+    
+    background-image:url(img/hougan.png);
+    background-size: cover; 
+    position:relative;
+    z-index:0;
+
+
+
+}
+
+/*白の背景*/
+#h-goomn {
+   width:70%;
+   height:340px;
+   border:2px solid #808080;
+   background-color:#FFF;
+   box-shadow: 4px 4px 10px #808080;
+   position:absolute;
+   z-index:2; 
+   left:15%;
+   top:100px;
+}
+
+
+#h-goomn #h-tec {
+   width:80%;
+   margin-left:10%;
+   margin-top:30px;
+   line-height:45px;
+}
+
+
+#h-goomn #h-tec h5 {
+   font-size:30px;
+
+
+}
+
+
+#h-goomn #h-tec span {
+   color:red;
+
+}
+
+
+#h-goomn #h-tec h6 {
+   font-size:30px;
+   margin-top:30px;
+
+}
+
+
+
+/*メールアドレス*/
+#h-xxi  #h-th {
+   width:70%;
+   margin-left:15%;
+   padding-top:500px;
+}
+
+
+
+#h-th .h-im {
+   width:100%;
+
+
+}
+
+#h-th .h-im img {
+   width:100%;
+   margin-top:30px;
+   box-shadow: 6px 6px 10px #808080;
+  padding-bottom:30px; 
+} 
+
+
+
+/* mousicyuu .css 終わります */
+
+
+
+
+/* situmon .css 始めます  */
+
+
+
+
+/*背景固定スクロール*/
+#h-kuro {
+    width: 100%;
+    min-height: 200px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-image: url(img/h-0.jpg);
+}
+
+
+#h-kuro h2 {
+    font-size:80px;
+    text-align:center;
+    padding-top:50px;
+
+}
+
+
+/*下記の画像*/
+#h-zen {
+   width:100%;
+   
+   background-image:url(img/hougan.png);
+   background-size: cover; 
+   background-position:center center;
+}
+
+#h-zen .h-Q {
+   width:70%;
+   margin-left:15%;
+
+
+
+
+
+}
+
+
+#h-zen .h-Q img {
+   width:100%;
+   margin-top:80px;
+   padding-bottom:30px;
+}
+
+
+
+
+
+/* situmon .css 終わります  */
+
+
+
+
+
+/* toiawase .css　始めます */  
+
+
+
+
+/*背景固定スクロール*/
+#h-head {
+    width: 100%;
+    min-height: 270px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-image: url(img/h-0.jpg);
+}
+
+
+#h-head h2 {
+    font-size:80px;
+    text-align:center;
+    padding:50px 0px;
+    line-height:90px;    
+}
+
+
+#h-head .h-supe {
+    margin-left:40%;
+
+
+
+}
+
+/*注意書き*/
+#h-eww {
+    width:100%;
+    height:1800px;
+    background-size: cover; 
+    position:relative;
+    z-index:0;
+
+
+
+}
+
+/*白の背景*/
+#h-fook {
+   width:70%;
+   
+   border:2px solid #808080;
+   background-color:#FFF;
+   box-shadow: 4px 4px 10px #808080;
+   position:absolute;
+   z-index:2; 
+   left:15%;
+   top:100px;
+}
+
+
+#h-fook #h-qoop {
+   width:80%;
+   margin-left:10%;
+   margin-top:30px;
+   line-height:50px;
+}
+
+
+#h-fook #h-qoop h5 {
+   font-size:30px;
+
+
+}
+
+
+#h-fook #h-qoop span {
+   color:red;
+
+}
+
+
+#h-fook #h-qoop h6 {
+   font-size:30px;
+   margin-top:30px;
+   padding-bottom:30px;
+}
+
+
+
+
+/*お問い合わせフォーム*/
+
+
+#toi {
+   width:70%;
+   margin-left:15%;
+   padding-top:800px;
+
+
+}
+
+
+#toi .h-go {
+   width:100%;
+   height:800px;
+   background-color:rgba(30,200,225,0.6);
+   box-shadow: 4px 4px 10px #808080;
+   position:relative;
+   z-index:1;
+
+}
+
+
+
+
+ form{
+  width:100%;
+  margin:0 auto;
+  position:absolute;
+  z-index:2;
+  left:5%;
+  top:50px;
+}
+.item{
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.label {
+    float: left;
+    width: 26%;
+    border-left: solid 3px #e0505d;
+    padding-left: 10px;
+}
+
+
+.inputs{
+  margin-left:5%;
+  float: left;
+  width:50%;
+}
+input[type="text"],input[type="email"],input[type="phone-number"]{
+  border: solid 1px #aaa;
+  border-radius:5px;
+  padding:10px;
+  font-size: 15px;
+  margin-left:5%;
+}
+textarea{
+  border: solid 1px #aaa;
+  border-radius:5px;
+  padding: 10px;
+  height: 160px;
+  font-size: 15px;
+}
+.btn-area{
+  text-align: center;
+}
+input[type="submit"]{
+  background: #e0505c;
+  border: none;
+  color: white;
+  font-size:17px;
+  font-weight:bold;
+  padding: 10px 20px;
+  margin: 0 5px;
+}
+input[type="reset"]{
+  background: #aaa;
+  border: none;
+  color: white;
+  font-size:17px;
+  font-weight:bold;
+  padding: 10px 20px;
+  margin: 0 5px;
+}
+
+
+
+.h-go span {
+  color:red;
+
+}
+
+.h-go .h-gee {
+  color:green;
+}
+
+
+
+
+
+
+
+
+
+/* toiawase .css 終わります */  
+
+
